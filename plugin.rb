@@ -4,3 +4,4 @@
 # author: mrova.com
 # minimum Discourse version: v0.9.9
 register_asset("javascripts/discourse/templates/header.js.handlebars")
+register_asset("javascripts/discourse/templates/topic.js.handlebars")
