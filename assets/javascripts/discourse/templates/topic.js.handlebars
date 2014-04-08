@@ -73,7 +73,17 @@
           {{#if postStream.loadingAbove}}
             <div class='spinner'>{{i18n loading}}</div>
           {{/if}}
-
+          <div style="clear:both">
+            <div class="dp-social">
+              <div class="dp-social-top">
+              
+                  <iframe src="//www.facebook.com/plugins/like.php?href=http://discusspolitics.in{{unbound url}}&amp;width=80&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=21&amp;appId=484106051716490" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;width:80px" allowTransparency="true"></iframe>
+              </div>
+              <div class="dp-social-top">
+                <iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?url=http://discusspolitics.in{{unbound url}}&via=dpltcs&text={{unbound title}}"style="width:180px; height:20px;"></iframe>
+              </div>
+            </div>
+          </div>
           {{#unless postStream.loadingFilter}}
             {{cloaked-collection cloakView="post"
                                  idProperty="post_number"
@@ -91,20 +101,10 @@
           {{/if}}
           
         </div>
-        <div class="clear:both">
-          <div class="dp-social">
-    <div class="dp-social-top">
-    
-    <iframe src="//www.facebook.com/plugins/like.php?href=http://discusspolitics.in{{unbound url}}&amp;width=80&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=21&amp;appId=484106051716490" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;width:80px" allowTransparency="true"></iframe>
-    </div>
-    <div class="dp-social-top">
-      <iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?url=http://discusspolitics.in{{unbound url}}&via=dpltcs&text={{unbound title}}"style="width:180px; height:20px;"></iframe>
-       
-    </div>
-    
-</div>
+        
+        <div id='topic-bottom'>
+          
         </div>
-        <div id='topic-bottom'></div>
 
         {{#if postStream.loadingFilter}}
           <div class='spinner small'>{{i18n loading}}</div>
